@@ -1,9 +1,14 @@
 import React from 'react';
 
-export default function GitTestFile() {
+interface Props {
+	name: string;
+}
+export default function GitTestFile({ name }: Props) {
 	return (
 		<div>
-			<p>git file test, its not working properly</p>
+			<p>
+				git file test, its not working properly <h1>Developer: {name}</h1>
+			</p>
 		</div>
 	);
 }

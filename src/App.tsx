@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { Counter } from './counter/Counter';
+import { Counter as CounterOne } from './counter/Counter';
 import GitTestFile from './counter/GitTestFile';
 
 function App() {
+	const [name, setName] = useState('Aditya');
 	return (
 		<div className="App">
 			<header className="App-header">
-				<Counter />
-				<GitTestFile />
+				<div>
+					<CounterOne />
+				</div>
+				<GitTestFile name={name} />
 			</header>
 		</div>
 	);
