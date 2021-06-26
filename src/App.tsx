@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Counter as CounterOne } from './counter/Counter';
 import GitTestFile from './counter/GitTestFile';
+import Info from './information/Info';
 
 function App() {
 	const [name, setName] = useState('Aditya');
@@ -13,6 +14,9 @@ function App() {
 				</div>
 				<GitTestFile name={name} />
 			</header>
+			<section>
+				<Info />
+			</section>
 		</div>
 	);
 }
