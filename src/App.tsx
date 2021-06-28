@@ -12,7 +12,21 @@ function App() {
       </header>
       <section className="one_two_ka_four">
         <Info />
+        <GitTestFile name={name} />
+
       </section>
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+			<GitTestFile name={name} />
+
     </div>
   );
 }
