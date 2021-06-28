@@ -5,17 +5,9 @@ export default function Info() {
 		<div>
 			<h2>Git information</h2>
 			<p>
-				Git allows and encourages you to have multiple local branches that can
-				be entirely independent of each other.
+				Git <span>HIII</span>of each other.
 			</p>
-			<p>
-				Git allows and encourages you to have multiple local branches that can
-				be entirely independent of each other.
-			</p>
-			<p>
-				Git allows and encourages you to have multiple local branches that can
-				be entirely independent of each other.
-			</p>
+			
 		</div>
 	);
 }
