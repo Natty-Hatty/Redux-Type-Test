@@ -19,6 +19,10 @@ export const counterSlice = createSlice({
 		},
 		decrement: (state) => {
 			state.value -= 1;
+		// 	<p>
+		// 	Git allows and encourages you to have multiple local branches that can
+		// 	be entirely independent of each other.
+		// </p>
 		},
 		// Use the PayloadAction type to declare the contents of `action.payload`
 		incrementByAmountSpecified: (state, action: PayloadAction<number>) => {
