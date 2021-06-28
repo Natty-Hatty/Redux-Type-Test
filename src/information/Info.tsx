@@ -8,6 +8,14 @@ export default function Info() {
 				Git allows and encourages you to have multiple local branches that can
 				be entirely independent of each other.
 			</p>
+			<p>
+				Git allows and encourages you to have multiple local branches that can
+				be entirely independent of each other.
+			</p>
+			<p>
+				Git allows and encourages you to have multiple local branches that can
+				be entirely independent of each other.
+			</p>
 		</div>
 	);
 }

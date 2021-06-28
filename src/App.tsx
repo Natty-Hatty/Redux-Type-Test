@@ -9,12 +9,12 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<div>
-					<CounterOne />
+				<div className="one_two_ka_four">
+					<CounterOne  />
 				</div>
 				<GitTestFile name={name} />
 			</header>
-			<section>
+			<section className="one_two_ka_four">
 				<Info />
 			</section>
 		</div>
