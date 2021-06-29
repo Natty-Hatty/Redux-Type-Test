@@ -4,13 +4,13 @@ export default function Info() {
 	return (
 		<div>
 			<h2>Git information</h2>
-			<p>
+			<h2>
 				Git <span>HIII</span>of each other.
-			</p>
+			</h2>
 
-      <p>
+      <span>
 				Git <span>HIII</span>of each other.
-			</p>
+			</span>
 
       <p>
 				Git <span>HIII</span>of each other.
