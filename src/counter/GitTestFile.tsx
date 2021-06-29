@@ -22,6 +22,12 @@ export default function GitTestFile({ name }: Props) {
       <p>
         git file test, its not working properly <h1>Developer: {name}</h1>
       </p>
+       <p>
+        git file test, its not working properly <h1>Developer: {name}</h1>
+      </p>
+       <p>
+        git file test, its not working properly <h1>Developer: {name}</h1>
+      </p>
     </div>
   );
 }

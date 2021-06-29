@@ -7,6 +7,14 @@ export default function Info() {
 			<p>
 				Git <span>HIII</span>of each other.
 			</p>
+
+      <p>
+				Git <span>HIII</span>of each other.
+			</p>
+
+      <p>
+				Git <span>HIII</span>of each other.
+			</p>
 			
 		</div>
 	);
