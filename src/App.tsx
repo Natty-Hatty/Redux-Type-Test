@@ -1,34 +1,24 @@
-import React, { useState } from "react";
-import "./App.css";
-import GitTestFile from "./counter/GitTestFile";
-import Info from "./information/Info";
+import { createGlobalStyle } from 'styled-components';
+import './App.css';
+import NavBar from './NavBar';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family: 'Poppins', sans-serif;
+  }
+`;
 
 function App() {
-  const [name, setName] = useState("Aditya");
-  return (
-    <div className="App">
-      <header className="App-header">
-        <GitTestFile name={name} />
-      </header>
-      <section className="one_two_ka_four">
-        <Info />
-        <GitTestFile name={name} />
-
-      </section>
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-			<GitTestFile name={name} />
-
-    </div>
-  );
+	return (
+		<div className="App">
+			<GlobalStyle />
+			<NavBar />
+			{/* <Card /> */}
+		</div>
+	);
 }
 
 export default App;
