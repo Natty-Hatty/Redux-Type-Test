@@ -29,9 +29,19 @@ export const ProfileDiv = styled.div`
 
 	.setting-icon {
 		height: 100%;
+		color: wheat;
 		/* width: 100px; */
 		/* border: 1px solid hotpink; */
 	}
+`;
+
+export const IconBtn = styled.button`
+	border: none;
+	color: wheat;
+	background: transparent;
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
 `;
 
 export const UserDiv = styled.div`
@@ -69,9 +79,12 @@ export const SecondLogo = styled(FirstLogo)`
 	color: orange;
 `;
 
-export const NavBtn = styled(motion.button)`
+interface DropDownBtnProps {
+	btnActive: boolean;
+}
+
+export const DropDownBtn = styled(motion.button)`
 	font-size: 15px;
-	color: white;
 	background: transparent;
 	border: none;
 	outline: none;
@@ -82,10 +95,7 @@ export const NavBtn = styled(motion.button)`
 	cursor: pointer;
 	user-select: none;
 	transition: color 0.5ms;
-
-	&:hover {
-		color: orange;
-	}
+	color: ${(props: DropDownBtnProps) => (props.btnActive ? 'orange' : 'white')};
 `;
 
 export const NavBtnWrap = styled.div`
@@ -93,6 +103,7 @@ export const NavBtnWrap = styled.div`
 	justify-content: space-around;
 	/* border: 2px solid green; */
 	flex: 1;
+	border: 2px solid green;
 `;
 
 export const UserText = styled.p`
@@ -101,4 +112,40 @@ export const UserText = styled.p`
 	text-transform: capitalize;
 	font-weight: 400;
 	user-select: none;
+`;
+
+interface DropDownProps {
+	active: boolean;
+}
+export const DropDownContent = styled.div`
+	height: 500px;
+	border: 1px solid red;
+	display: ${(props: DropDownProps) => (props.active ? 'block' : 'none')};
+	/* width: 100vw; */
+
+	position: absolute;
+	top: 100%;
+	width: 100vw;
+	left: 0;
+	background-color: #f7f7f7;
+	overflow: scroll;
+`;
+
+export const DropDown = styled.div`
+	flex: 1;
+`;
+
+interface BackDropProps {
+	isOverlay: boolean;
+}
+
+export const BackDrop = styled.div`
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0.4;
+	z-index: -1;
+	display: ${(props: BackDropProps) => (props.isOverlay ? 'block' : 'none')};
 `;

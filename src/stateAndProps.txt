@@ -1,0 +1,103 @@
+
+//   let context =   {
+//       "openedMenu": "",
+//       "showOverlay": false
+//     },
+  
+
+
+// let buttonElementProps = {
+//   "elementPosition": 0,
+//   "title": "Our top picks",
+//   "subTitle": "See credit cards & more",
+//   "mobile": {
+//     "label": "Top Picks",
+//     "icon": "creditCard",
+//     "foregroundColor": "blue-light",
+//     "backgroundColor": "blue-lightest"
+//   },
+//   "l2Menu": [
+//     "{categoryLinks: Array(8), title: \"Find your best\"}",
+//     "{categoryLinks: Array(8), title: \"Compare and revie…}"
+//   ],
+//   "onHover": "ƒ o() {}",
+// }
+
+
+// let dropdownContentProps = {
+// 	title: 'Our top picks',
+// 	mobileLabel: 'Top Picks',
+// 	menu: [
+// 		'{categoryLinks: Array(8), title: "Find your best"}',
+// 		'{categoryLinks: Array(8), title: "Compare and revie…}',
+// 	],
+// 	onClose: 'ƒ () {}',
+// 	opened: false,
+// 	isMobile: false,
+// 	maxHeight: '672px',
+// 	elementPosition: 0,
+// };
+
+// let topMenuProps = {
+//   "title": "Our top picks",
+//   "subTitle": "See credit cards & more",
+//   "mobile": {
+//     "label": "Top Picks",
+//     "icon": "creditCard",
+//     "foregroundColor": "blue-light",
+//     "backgroundColor": "blue-lightest"
+//   },
+//   "l2Menu": [
+//     {
+//       "title": "Find your best",
+//       "categoryLinks": [
+//         {
+//           "title": "Best of credit cards",
+//           "l3Links": [
+//             {
+//               "uri": "/the-best-credit-cards",
+//               "title": "Best credit cards"
+//             },
+//             {
+//               "uri": "/best/credit-cards/rewards",
+//               "title": "Best rewards cards"
+//             },
+//             "{title: \"Best cash back cards\", uri: \"/best/credit-…}",
+//             "{title: \"Best travel cards\", uri: \"/best/credit-car…}",
+//             "{title: \"Best balance transfer cards\", uri: \"/best/…}",
+//             "{title: \"Best 0% APR cards\", uri: \"/best/credit-car…}",
+//             "{title: \"Best student cards\", uri: \"/best/credit-ca…}",
+//             "{title: \"Best cards for bad credit\", uri: \"/best/cr…}",
+//             "{title: \"Best small business cards\", uri: \"/best/cr…}"
+//           ]
+//         },
+//         {
+//           "title": "Best of banking",
+//           "l3Links": [
+//             {
+//               "uri": "/best/banking/high-interest-accounts",
+//               "title": "Best high interest accounts"
+//             },
+//             "{title: \"Best high-yield online savings accounts\", …}",
+//             "{title: \"Best savings accounts\", uri: \"/best/bankin…}",
+//             "{title: \"Best CD rates\", uri: \"/best/banking/cd-rat…}",
+//             "{title: \"Best checking accounts\", uri: \"/best/banki…}",
+//             "{title: \"Best money market accounts\", uri: \"/best/b…}",
+//             "{title: \"Best cash management accounts\", uri: \"/bes…}",
+//             "{title: \"Best bonuses and promotions\", uri: \"/artic…}",
+//             "{title: \"Best banks\", uri: \"/blog/banking/best-bank…}"
+//           ]
+//         },
+//         "{l3Links: Array(8), title: \"Best of investing\"}",
+//         "{l3Links: Array(8), title: \"Best of mortgages\"}",
+//         "{l3Links: Array(5), title: \"Best of insurance\"}",
+//         "{l3Links: Array(7), title: \"Best of personal loans\"}",
+//         "{l3Links: Array(7), title: \"Best of student loans\"}",
+//         "{l3Links: Array(5), title: \"Best of small business\"}"
+//       ]
+//     },
+//     "{categoryLinks: Array(8), title: \"Compare and revie…}"
+//   ],
+//   "onHover": "ƒ o() {}",
+//   "elementPosition": 0
+// }
