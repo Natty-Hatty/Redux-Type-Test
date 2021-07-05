@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import './App.css';
+import Card from './Card';
 import NavBar from './NavBar';
 
 const GlobalStyle = createGlobalStyle`

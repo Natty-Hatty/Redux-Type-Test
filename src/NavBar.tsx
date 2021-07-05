@@ -53,7 +53,7 @@ const NavBar = () => {
 				<ProfileDiv>
 					<SettingNavDropDown
 						elementPosition={6}
-						title="Dashboard"
+						title="Style Icon"
 						opened={elementPosition === 6}
 						onHover={onHover}
 					/>
@@ -146,7 +146,16 @@ const SettingNavDropDown = ({
 }: any) => {
 	return (
 		<DropDown onMouseLeave={() => onHover(-1)}>
-			<IconBtn onMouseEnter={() => onHover(elementPosition)} type="button">
+			<IconBtn
+				onMouseEnter={() => onHover(elementPosition)}
+				type="button"
+				whileHover={{ scale: 1.4, rotate: [0, -120, 270, 360, 0] }}
+				transition={{
+					duration: 1,
+					ease: 'easeInOut',
+					times: [0, 0.25, 0.75, 1],
+				}}
+			>
 				<SettingsIcon fontSize="large" />
 			</IconBtn>
 			<DropDownContent active={opened}>

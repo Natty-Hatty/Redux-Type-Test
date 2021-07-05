@@ -35,11 +35,11 @@ export const ProfileDiv = styled.div`
 	}
 `;
 
-export const IconBtn = styled.button`
+export const IconBtn = styled(motion.button)`
 	border: none;
 	color: wheat;
 	background: transparent;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	display: flex;
 	align-items: center;
 `;
@@ -103,7 +103,7 @@ export const NavBtnWrap = styled.div`
 	justify-content: space-around;
 	/* border: 2px solid green; */
 	flex: 1;
-	border: 2px solid green;
+	/* border: 2px solid green; */
 `;
 
 export const UserText = styled.p`
@@ -118,8 +118,8 @@ interface DropDownProps {
 	active: boolean;
 }
 export const DropDownContent = styled.div`
-	height: 500px;
-	border: 1px solid red;
+	height: 400px;
+	/* border: 1px solid red; */
 	display: ${(props: DropDownProps) => (props.active ? 'block' : 'none')};
 	/* width: 100vw; */
 
@@ -129,6 +129,16 @@ export const DropDownContent = styled.div`
 	left: 0;
 	background-color: #f7f7f7;
 	overflow: scroll;
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		height: 15px;
+		display: block;
+		width: 100%;
+		/* background: green; */
+	}
 `;
 
 export const DropDown = styled.div`
