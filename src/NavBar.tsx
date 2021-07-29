@@ -4,21 +4,21 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import SettingsIcon from '@material-ui/icons/Settings';
 import React, { useEffect, useState } from 'react';
 import {
-	BackDrop,
-	DropDown,
-	DropDownBtn,
-	DropDownContent,
-	FirstLogo,
-	Header,
-	IconBtn,
-	Logo,
-	LogoLinks,
-	Nav,
-	NavBtnWrap,
-	ProfileDiv,
-	SecondLogo,
-	UserDiv,
-	UserText,
+  BackDrop,
+  DropDown,
+  DropDownBtn,
+  DropDownContent,
+  FirstLogo,
+  Header,
+  IconBtn,
+  Logo,
+  LogoLinks,
+  Nav,
+  NavBtnWrap,
+  ProfileDiv,
+  SecondLogo,
+  UserDiv,
+  UserText
 } from './style';
 
 const NavBar = () => {
@@ -35,10 +35,14 @@ const NavBar = () => {
 	useEffect(() => {
 		if (elementPosition > -1) {
 			setOverlay(true);
+			document.body.style.overflow = 'hidden';
 		} else {
 			setOverlay(false);
+			document.body.style.overflow = '';
 		}
 	}, [elementPosition]);
+
+	// Add Framer Motion in submene opening
 
 	return (
 		<Header>
@@ -53,7 +57,7 @@ const NavBar = () => {
 				<ProfileDiv>
 					<SettingNavDropDown
 						elementPosition={6}
-						title="Style Icon"
+						title="Settings"
 						opened={elementPosition === 6}
 						onHover={onHover}
 					/>
@@ -76,6 +80,7 @@ const NavBar = () => {
 export default NavBar;
 
 // backdrop could be just overlay to show something is opened
+// hover highlight setting icon
 
 const NavButtons = ({ onHover, elementPosition }: any) => {
 	return (
@@ -130,9 +135,12 @@ const NavDropDown = ({ title, opened, elementPosition, onHover }: any) => {
 				{title}
 			</DropDownBtn>
 			<DropDownContent active={opened}>
-				<h1>{title}</h1>
-				<h1>{title}</h1>
-				<h1>{title}</h1>
+				<div className="dropdown-content">
+					<h1 style={{ border: '1px solid red' }}>{title}</h1>
+					<h1>{title}</h1>
+					<h1>{title}</h1>
+					<p>New here Welcome to natty hatty</p>
+				</div>
 			</DropDownContent>
 		</DropDown>
 	);
@@ -145,17 +153,15 @@ const SettingNavDropDown = ({
 	onHover,
 }: any) => {
 	return (
-		<DropDown onMouseLeave={() => onHover(-1)}>
-			<IconBtn
-				onMouseEnter={() => onHover(elementPosition)}
-				type="button"
-				whileHover={{ scale: 1.4, rotate: [0, -120, 270, 360, 0] }}
-				transition={{
-					duration: 1,
-					ease: 'easeInOut',
-					times: [0, 0.25, 0.75, 1],
-				}}
-			>
+		<div
+			style={{
+				height: '100%',
+				display: 'flex',
+				alignItems: 'center',
+			}}
+			onMouseLeave={() => onHover(-1)}
+		>
+			<IconBtn onMouseEnter={() => onHover(elementPosition)} type="button">
 				<SettingsIcon fontSize="large" />
 			</IconBtn>
 			<DropDownContent active={opened}>
@@ -163,6 +169,6 @@ const SettingNavDropDown = ({
 				<h1>{title}</h1>
 				<h1>{title}</h1>
 			</DropDownContent>
-		</DropDown>
+		</div>
 	);
 };

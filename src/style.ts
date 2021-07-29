@@ -8,20 +8,21 @@ export const Header = styled.header`
 `;
 
 export const Nav = styled.nav`
+	box-sizing: border-box;
 	position: relative;
 	background: #232e3e;
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	height: 82px;
 	width: 100%;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	/* border: 2px solid red; */
 	padding-left: 15px;
 	padding-right: 25px;
 `;
 
 export const ProfileDiv = styled.div`
-	/* border: 1px solid red; */
+	/* border: 1px solid orange; */
 	display: flex;
 	flex-basis: 30%;
 	align-items: center;
@@ -42,6 +43,7 @@ export const IconBtn = styled(motion.button)`
 	/* border: 1px solid red; */
 	display: flex;
 	align-items: center;
+	padding: 10px;
 `;
 
 export const UserDiv = styled.div`
@@ -90,7 +92,7 @@ export const DropDownBtn = styled(motion.button)`
 	outline: none;
 	font-weight: 400;
 	/* border: 1px solid red; */
-	flex: 1;
+	width: 100%;
 	height: 100%;
 	cursor: pointer;
 	user-select: none;
@@ -101,9 +103,10 @@ export const DropDownBtn = styled(motion.button)`
 export const NavBtnWrap = styled.div`
 	display: flex;
 	justify-content: space-around;
-	/* border: 2px solid green; */
 	flex: 1;
-	/* border: 2px solid green; */
+	@media only screen and (max-width: 1024px) {
+		display: none;
+	}
 `;
 
 export const UserText = styled.p`
@@ -118,31 +121,31 @@ interface DropDownProps {
 	active: boolean;
 }
 export const DropDownContent = styled.div`
-	height: 400px;
-	/* border: 1px solid red; */
-	display: ${(props: DropDownProps) => (props.active ? 'block' : 'none')};
-	/* width: 100vw; */
-
+	height: 500px;
+	display: ${(props: DropDownProps) => (props.active ? 'flex' : 'none')};
 	position: absolute;
 	top: 100%;
 	width: 100vw;
 	left: 0;
 	background-color: #f7f7f7;
 	overflow: scroll;
-	&::before {
-		position: absolute;
-		content: '';
-		bottom: 0;
-		left: 0;
-		height: 15px;
-		display: block;
+
+	.dropdown-content {
+		position: relative;
+		padding-bottom: 48px;
+		height: 100%;
 		width: 100%;
-		/* background: green; */
+		border: 3px solid;
+	}
+
+	.columns {
+		border: 1px solid red;
 	}
 `;
 
 export const DropDown = styled.div`
 	flex: 1;
+	/* border: 1px solid red; */
 `;
 
 interface BackDropProps {
